@@ -6,23 +6,17 @@ The study was conducted as part of the **Advanced Marketing Analytics** course, 
 
 ---
 
-## 🎯 Objectives
-- Evaluate ChatGPT’s competitive position in the AI assistant market.  
-- Identify **key perceptual attributes** (Ease of Use, Speed of Response, Accuracy, Innovation, Creativity, Trustworthiness).  
-- Derive a **positioning map** using **Principal Component Analysis (PCA)**.  
-- Segment users based on preference data and usage behavior.  
-- Recommend strategies for **sustaining market leadership** and addressing weaknesses.
+## 📊 Data & Methodology
+Survey Instrument: Google Forms (39 cleaned responses, 1–9 scale)
+Perceptual Data: 6 brands × 6 attributes
+Ease of Use, Speed, Accuracy, Range, Innovation, Trustworthiness
+Analytics:
+Dimensionality Reduction: PCA (2 dimensions retained, 99.8% variance explained)
+Modeling & Visualization: Python (Pandas, NumPy, Scikit-Learn, Matplotlib, Seaborn), Enginius for interactive reports
+Reporting: Jupyter Notebooks, PDF, and PowerPoint
 
 ---
-
-## 🛠 Tools & Methodology
-- **Python** → Data cleaning, statistical analysis, PCA, clustering, visualization.  
-- **Enginius** → Positioning map derivation, segmentation, perceptual/preference analysis.  
-- **Survey Data** → Google Forms, 75 responses (39 valid after cleaning).  
-
----
-
-## 🔑 Key Insights
+## 🔑 Insights
 - **ChatGPT leads** the market in *Ease of Use* and *Speed of Response*, explaining **99.8% of perceptual variance**.  
 - ChatGPT has the **highest preference score (7.74)** compared to Copilot (4.18), DeepSeek (3.92), Gemini (≈3), and Claude (3.46).  
 - **Trustworthiness** is a weakness across all AI models, including ChatGPT, offering a clear opportunity for differentiation.  
@@ -41,12 +35,30 @@ The study was conducted as part of the **Advanced Marketing Analytics** course, 
 5. **Expand Market Reach** → Awareness campaigns, education, and global expansion.  
 
 ---
+## ✨ Key Findings
 
-## 📂 Repository Contents
-- `data/` → Cleaned survey data (perceptual + preference).  
-- `analysis/` → Python scripts for PCA, clustering, and visualizations.  
-- `slides/` → Final project presentation (PDF).  
-- `README.md` → Project documentation (this file).  
+### Primary Dimensions
+- **Dim 1**: Ease of Use & Speed of Response (99.5%)  
+- **Dim 2**: Accuracy & Innovation (0.3%)  
+
+### Brand Positioning (Dim 1 vs. Dim 2)
+- **ChatGPT (0.900, –0.012)**: clear leader on usability & speed  
+- **Others**: DeepSeek (–0.140, 0.040), Gemini (–0.225, 0.001), Copilot (–0.096, 0.010), Claude (–0.439, –0.039)  
+
+### Consumer Preferences
+- **Mean Ratings**:
+  - ChatGPT: **7.74**
+  - Copilot: 4.18
+  - Gemini: 4.08
+  - DeepSeek: 3.92
+  - Claude: 3.46  
+
+- **Segments Identified**:
+  - **Segment 1**: Open to alternatives (preferences 5.1–7.4)  
+  - **Segment 2**: Highly loyal to ChatGPT (avg **8.19**)  
+
+### Market Simulation
+- A hypothetical neutral entrant could capture **~7.2% market share** under a first-choice rule.
 
 ---
 
@@ -57,16 +69,10 @@ The study was conducted as part of the **Advanced Marketing Analytics** course, 
 
 ---
 
-## 🚧 Limitations
-- Small sample size (~39 valid responses) may not fully represent the AI market.  
-- Analysis does not account for **future AI advancements** or **competitor pricing models**.  
-- Perceptions are subjective and may reflect **brand familiarity bias**.  
-
----
-
-## 👥 Team
-**Team 5 – Advanced Marketing Analytics**  
-Arizona State University (MSBA Program)  
+## 🛠️ Tech Stack
+- **Languages & Libraries**: Python (Pandas, NumPy, Scikit-Learn)
+- **Visualization**: Matplotlib, Seaborn, Enginius
+- **Reporting**: Jupyter Notebooks, PDF/PowerPoint exports 
 
 ---
 
